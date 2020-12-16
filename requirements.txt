@@ -1,0 +1,10 @@
+# linting
+isort
+flake8
+flake8-commas
+unify
+autoflake
+autopep8
+
+# dev
+jupyterlab
