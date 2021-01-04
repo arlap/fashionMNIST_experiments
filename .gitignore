@@ -114,3 +114,5 @@ venv.bak/
 .accuracy
 /ansible/playbook.retry
 .DS_Store
+*.h5
+*.joblib

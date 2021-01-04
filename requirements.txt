@@ -12,3 +12,4 @@ matplotlib
 jupyterlab
 tensorflow
 keras
+sklearn
