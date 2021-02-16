@@ -31,11 +31,23 @@ def plot_value_array(prediction_array, true_label):
 
 
 def plot_loss_graph(h):
-    # Plot training & validation loss values. Takes keras history object
+    # Plot training & validation loss and acc values.
+    # Takes keras history object
+    plt.figure(figsize=(13, 5))
+    plt.subplot(1, 2, 1)
+    plt.grid()
     plt.plot(h.history['loss'])
     plt.plot(h.history['val_loss'])
     plt.title('Model loss')
     plt.ylabel('Loss')
+    plt.xlabel('Epoch')
+    plt.legend(['Train', 'Validation'], loc='upper left')
+    plt.subplot(1, 2, 2)
+    plt.grid()
+    plt.plot(h.history['accuracy'])
+    plt.plot(h.history['val_accuracy'])
+    plt.title('Model accuracy')
+    plt.ylabel('Acc')
     plt.xlabel('Epoch')
     plt.legend(['Train', 'Validation'], loc='upper left')
     plt.show()
